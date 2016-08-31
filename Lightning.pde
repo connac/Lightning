@@ -1,33 +1,24 @@
+int startX = 0
+int startY = 150
+int endX = 0
+int endY = 150
 void setup()
 {
   size(350, 300);
+  noLoop(); //draws screen only once
 }
 void draw()
 {
-line(0, 150, 8, 143);	
-line(8, 143, 20, 160);
-line(20, 160, 27, 168);
-line(27, 168, 33, 173);
-line(33, 173, 40, 176);
-line(40, 176, 54, 172);
-line(54, 172, 58, 168);
-line(58, 168, 66, 175);
-line(66, 175, 70, 170);
-line(70, 170, 74, 174);
-line(74, 174, 80, 180);
-line(80, 180, 90, 184);
-line(90, 184, 97, 190);
-line(97, 190, 103, 197);
-line(103, 197, 108, 192);
-line(108, 192, 115, 194);
-line(115, 194, 120, 185);
-line(120, 185, 128, 188);
+stroke((int)(Math.random()*256));
+line(startX, startY, endX, endY);
+
+
 
 
 
 }
 void mousePressed()
 {
-
+redraw ();
 }
 
