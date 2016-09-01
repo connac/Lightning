@@ -5,12 +5,25 @@ int endY = 150
 void setup()
 {
   size(350, 300);
-  noLoop(); //draws screen only once
+  strokeWeight(10);
+  background(0)
 }
 void draw()
 {
 stroke((int)(Math.random()*256));
-line(startX, startY, endX, endY);
+while(endX > 350)
+{
+endX = startX((int)(Math.random()*10));
+endY = startY((int)(Math.random()*1)
+line(startX, startY, endX, endY)
+startX = endX 
+startY = endY
+
+}
+
+
+
+
 
 
 
@@ -19,6 +32,9 @@ line(startX, startY, endX, endY);
 }
 void mousePressed()
 {
-redraw ();
+ startX = 0
+ startY = 150
+endX = 0
+ endY = 150
 }
 
